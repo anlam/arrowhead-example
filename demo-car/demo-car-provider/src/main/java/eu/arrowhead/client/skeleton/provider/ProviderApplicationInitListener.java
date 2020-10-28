@@ -101,7 +101,10 @@ public class ProviderApplicationInitListener extends ApplicationInitListener {
 	public void customDestroy() {
 		//Unregister service
 		arrowheadService.unregisterServiceFromServiceRegistry(CarProviderConstants.CREATE_CAR_SERVICE_DEFINITION);
+		arrowheadService.unregisterServiceFromServiceRegistry(CarProviderConstants.GET_CAR_SERVICE_DEFINITION);
+		arrowheadService.unregisterServiceFromServiceRegistry(CarProviderConstants.UPDATE_CAR_SERVICE_DEFINITION);
 	}
+	
 	
 	//=================================================================================================
 	// assistant methods
